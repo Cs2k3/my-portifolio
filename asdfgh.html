@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 40px 0;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>My name is Chandrashekar, and I am currently pursuing my studies in the field of Computer Science and Engineering. With a strong foundation in front-end development, I possess a knack for creating visually appealing and user-friendly interfaces. Proficient in HTML, CSS, and JavaScript, I enjoy bringing designs to life and crafting immersive web experiences. I have a keen eye for detail and strive for excellence in every project I undertake. Leveraging my skills in front-end technologies, I aim to bridge the gap between design and functionality to deliver seamless digital solutions. Passionate about innovation and user-centric design, I am dedicated to pushing the boundaries of front-end development and contributing to the ever-evolving landscape of web development.</p>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="project">
+                    <h3>Project 1 : ONLINE PET MANEGMENT SYSTEM</h3>
+                    <p>This is the project for selling the pet Requirements in online and for online payment.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2 : HOSPITAL MANAGEMENT</h3>
+                    <p>The project is based on python. Which has patient login page and various requirements that a patient fill during their admit and Doctor requirements page.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3 : ONLINE JOB APPLICATION SYSTEM</h3>
+                    <p>Here I have used various algorithm to find which algorithm gives us a better accuracy.
+                        We have used HTML and CSS for front end process and we used mongo db as the back end 
+                        </p>
+                </div>
+                <div class="project">
+                    <h3>Project 4 : SCHOOL MANAGEMENT SYSTEM</h3>
+                    <p>Here we have given complete description about the school and we have the user interface for interaction with the humans</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Have a question or want to collaborate? Feel free to reach out!</p>
+                <pre>
+                    Chandrashekar R
+                    Address:2nd main 12 th cross Amaravathi nagar Bangarpet
+                    EmailID:cs2k3chandra@gmail.com
+                    Mobile No: +91 8660855375
+                    </pre>
+                <!-- Insert contact form here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
